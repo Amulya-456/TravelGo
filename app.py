@@ -17,7 +17,7 @@ sns_client = boto3.client('sns', region_name=REGION)
 
 users_table = dynamodb.Table('travelgo_user')
 trains_table = dynamodb.Table('trains') # Note: This table is declared but not used in the provided routes.
-bookings_table = dynamodb.Table('bookings')
+bookings_table = dynamodb.Table('Bookings')
 
 SNS_TOPIC_ARN = 'arn:aws:sns:ap-south-1:211125402868:Travelgo:456e3aee-eba0-45c8-93d5-ac7954d19a86'  # Replace with actual SNS topic ARN
 
